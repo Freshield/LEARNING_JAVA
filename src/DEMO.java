@@ -9,7 +9,6 @@ public class DEMO {
 		System.out.println(o.toString());
 		System.out.println("FINISHED");
 		System.out.println();
-		System.out.println("HELLO");
 
 	}
 
