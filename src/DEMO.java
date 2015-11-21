@@ -16,14 +16,14 @@ public class DEMO {
 		char d = '¹Ú';
 		int e = d;
 		char f = 27915;
-		//char g = '\a';
+		char g = '\t';
 		System.out.println(a);
 		System.out.println(b);
 		System.out.println(c);
 		System.out.println(d);
 		System.out.println(e);
 		System.out.println(f);
-		//System.out.println(g);
+		System.out.println(g);
 
 	}
 
