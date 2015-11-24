@@ -13,9 +13,18 @@ public class Encrypt {
 		int a = 0;
 		int b = 0;
 		
-		a = (int)(Math.random()*10);
+		do
+		{
+
+			a = (int)(Math.random()*10);
+			
+			b = (int)(Math.random()*10);
+			
+		}while(a % 2 == 0);
 		
-		b = (int)(Math.random()*10);
+		
+		System.out.println(a);
+		System.out.println(b);
 		
 		int x,y,m,i;
 		
