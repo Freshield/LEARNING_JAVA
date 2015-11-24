@@ -10,11 +10,25 @@ public class Encrypt {
 	
 	public void setCode()
 	{
+		int a = 3;
+		int b = 5;
+		
+		int x,y,m,i;
+		
 		char c = 'a';
 		
-		for(int i = 0;i<26;i++)
+		for(i = 0;i<26;i++)
 		{
-			code[i]=c++;
+			x = c;
+			
+			y = x * a + b;
+			
+			m = y % 26;
+			
+			code[i] = (char)(m + 97);
+			
+			c ++;
+			
 		}
 	}
 	
