@@ -52,11 +52,45 @@ public class Encrypt {
 	
 	public String toEncode(String s)
 	{
-		return s;
+		char[] cs = s.toCharArray();
+		
+		int i,ci,d,m;
+		
+		char r;
+		
+		//Character cc;
+		
+		for(i = 0;i < cs.length; i ++)
+		{
+			if(cs[i] >= 97 && cs[i] <= 122)
+			{
+				ci = cs[i];
+				
+				m = ci - 97;
+				
+				cs[i] = code[m];
+			}
+		}
+		/*
+		for(i = 0;i < cs.length; i ++)
+		{
+			cc = new Character(cs[i]);
+			
+			rs = rs.concat(cc.toString());
+		}
+		*/
+
+		String rs = new String(cs);
+		
+		return rs;
 	}
 	
 	public String toDecode(String s)
 	{
+		//char[] cs = s.toCharArray();
+		
+		//int i,j;
+		
 		return s;
 	}
 	
@@ -66,14 +100,11 @@ public class Encrypt {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		for(int i = 0;i<16;i++)
-		{
 			Encrypt e = new Encrypt();
 			
 			System.out.println(e.code);
-		}
 		
-		/*
+		
 		String s = "There is no spoon";
 		
 		System.out.println(s);
@@ -85,7 +116,7 @@ public class Encrypt {
 		String s2 = e.toDecode(s1);
 		
 		System.out.println(s2);
-		*/
+		
 	}
 
 }
