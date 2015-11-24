@@ -10,8 +10,12 @@ public class Encrypt {
 	
 	public void setCode()
 	{
-		int a = 3;
-		int b = 5;
+		int a = 0;
+		int b = 0;
+		
+		a = (int)(Math.random()*10);
+		
+		b = (int)(Math.random()*10);
 		
 		int x,y,m,i;
 		
@@ -52,10 +56,15 @@ public class Encrypt {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Encrypt e = new Encrypt();
 		
-		System.out.println(e.code);
+		for(int i = 0;i<16;i++)
+		{
+			Encrypt e = new Encrypt();
+			
+			System.out.println(e.code);
+		}
 		
+		/*
 		String s = "There is no spoon";
 		
 		System.out.println(s);
@@ -67,7 +76,7 @@ public class Encrypt {
 		String s2 = e.toDecode(s1);
 		
 		System.out.println(s2);
-
+		*/
 	}
 
 }
