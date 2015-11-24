@@ -8,17 +8,17 @@
 
 <AnchorPane id="AnchorPane" prefHeight="268.0" prefWidth="848.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="encryptor.EncryptorController">
     <children>
-        <Button fx:id="button" layoutX="21.0" layoutY="130.0" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="104.0" text="New" />
-        <Label fx:id="label" alignment="CENTER_RIGHT" layoutX="23.0" layoutY="15.0" minHeight="16" minWidth="69" prefHeight="43.0" prefWidth="104.0" text="Input:" />
-      <Label fx:id="label1" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="57.0" minHeight="16" minWidth="69" prefHeight="43.0" prefWidth="104.0" text="Output:" />
-      <TextField layoutX="153.0" layoutY="18.0" prefHeight="36.0" prefWidth="626.0" />
-      <TextField layoutX="153.0" layoutY="61.0" prefHeight="28.0" prefWidth="626.0" />
-      <Button fx:id="button1" layoutX="134.0" layoutY="130.0" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="104.0" text="Load" />
-      <Button fx:id="button2" layoutX="251.0" layoutY="130.0" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="104.0" text="Save" />
-      <Button fx:id="button3" layoutX="371.0" layoutY="130.0" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="104.0" text="Encode" />
-      <Button fx:id="button4" layoutX="491.0" layoutY="130.0" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="104.0" text="Decode" />
-      <Button fx:id="button5" layoutX="611.0" layoutY="130.0" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="104.0" text="Clear" />
-      <Button fx:id="button6" layoutX="725.0" layoutY="130.0" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="104.0" text="Copy" />
-      <Label fx:id="label2" layoutX="30.0" layoutY="195.0" minHeight="16" minWidth="69" prefHeight="43.0" prefWidth="368.0" text="something happened..." />
+        <Button fx:id="newbutton" layoutX="21.0" layoutY="130.0" onAction="#newMethod" prefHeight="43.0" prefWidth="104.0" text="New" />
+        <Label fx:id="label101" alignment="CENTER_RIGHT" layoutX="23.0" layoutY="15.0" minHeight="16" minWidth="69" prefHeight="43.0" prefWidth="104.0" text="Input:" />
+      <Label fx:id="label102" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="57.0" minHeight="16" minWidth="69" prefHeight="43.0" prefWidth="104.0" text="Output:" />
+      <TextField fx:id="text01" layoutX="153.0" layoutY="18.0" prefHeight="36.0" prefWidth="626.0" />
+      <TextField fx:id="text02" layoutX="153.0" layoutY="61.0" prefHeight="28.0" prefWidth="626.0" />
+      <Button fx:id="loadbutton" layoutX="134.0" layoutY="130.0" onAction="#loadMethod" prefHeight="43.0" prefWidth="104.0" text="Load" />
+      <Button fx:id="savebutton" layoutX="251.0" layoutY="130.0" onAction="#saveMethod" prefHeight="43.0" prefWidth="104.0" text="Save" />
+      <Button fx:id="encodebutton" layoutX="371.0" layoutY="130.0" onAction="#encodeMethod" prefHeight="43.0" prefWidth="104.0" text="Encode" />
+      <Button fx:id="decodebutton" layoutX="491.0" layoutY="130.0" onAction="#decodeMethod" prefHeight="43.0" prefWidth="104.0" text="Decode" />
+      <Button fx:id="clearbutton" layoutX="611.0" layoutY="130.0" onAction="#clearMethod" prefHeight="43.0" prefWidth="104.0" text="Clear" />
+      <Button fx:id="copybutton" layoutX="725.0" layoutY="130.0" onAction="#copyMethod" prefHeight="43.0" prefWidth="104.0" text="Copy" />
+      <Label fx:id="label103" layoutX="30.0" layoutY="195.0" minHeight="16" minWidth="69" prefHeight="43.0" prefWidth="368.0" text="something happened..." />
     </children>
 </AnchorPane>

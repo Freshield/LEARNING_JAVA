@@ -20,16 +20,52 @@ import javafx.scene.control.Label;
 public class EncryptorController implements Initializable {
     
     @FXML
-    private Label label;
+    private Label label103;
     @FXML
-    private Button button;
+    private Button newbutton;
+    private Button loadbutton;
+    private Button savebutton;
+    private Button encodebutton;
+    private Button decodebutton;
+    private Button clearbutton;
+    private Button copybutton;
     
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private void newMethod(ActionEvent event) {
+        
+        label103.setText("This is new button");
     }
     
+    @FXML
+    private void loadMethod(ActionEvent event) {
+        
+        label103.setText("This is load button");
+    }
+    @FXML
+    private void saveMethod(ActionEvent event) {
+        
+        label103.setText("This is save button");
+    }
+    @FXML
+    private void encodeMethod(ActionEvent event) {
+        
+        label103.setText("This is encode button");
+    }
+    @FXML
+    private void decodeMethod(ActionEvent event) {
+        
+        label103.setText("This is decode button");
+    }
+    @FXML
+    private void clearMethod(ActionEvent event) {
+        
+        label103.setText("This is clear button");
+    }
+    @FXML
+    private void copyMethod(ActionEvent event) {
+        
+        label103.setText("This is copy button");
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
