@@ -87,11 +87,42 @@ public class Encrypt {
 	
 	public String toDecode(String s)
 	{
-		//char[] cs = s.toCharArray();
+		char[] cs = s.toCharArray();
 		
-		//int i,j;
+		int i,j;
 		
-		return s;
+		char r;
+		
+		//String rs = "";
+		
+		Character cc;
+		
+		for(i = 0;i < cs.length; i++)
+		{
+			if(cs[i] >= 97 && cs[i] <= 122)
+			{
+				for(j = 0;i <= code.length; j ++)
+				{
+					if(cs[i] == code[j])
+					{
+						cs[i] = (char)(j + 97);
+						break;
+					}
+				}
+			}
+		}
+		/*for(i = 0;i < cs.length; i++)
+		{
+			cc = new Character(cs[i]);
+			
+			rs = rs.concat(cc.toString());
+		}
+		*/
+
+		String rs = new String(cs);
+		
+		
+		return rs;
 	}
 	
 	
