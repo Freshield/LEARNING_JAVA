@@ -171,11 +171,19 @@ public class EncryptorController implements Initializable {
     }
     @FXML
     private void copyMethod(ActionEvent event) {
-        Clipboard clipboard = Clipboard.getSystemClipboard();
-        ClipboardContent content = new ClipboardContent();
-        content.putString(resultText);
-        clipboard.setContent(content);
-        label103.setText("COPIED");
+        if(resultText == "")
+        {
+            label103.setText("NOT HAVE RESULT");
+        }
+        else
+        {
+            Clipboard clipboard = Clipboard.getSystemClipboard();
+            ClipboardContent content = new ClipboardContent();
+            content.putString(resultText);
+            clipboard.setContent(content);
+            label103.setText("COPIED");
+        }
+        
         
     }
     @Override
