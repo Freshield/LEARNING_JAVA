@@ -16,7 +16,7 @@
          <font>
             <Font name="Consolas" size="18.0" />
          </font></TextField>
-      <TextField fx:id="text02" layoutX="153.0" layoutY="61.0" prefHeight="28.0" prefWidth="626.0">
+      <TextField fx:id="text02" disable="true" layoutX="153.0" layoutY="61.0" prefHeight="28.0" prefWidth="626.0">
          <font>
             <Font name="Consolas" size="18.0" />
          </font></TextField>
