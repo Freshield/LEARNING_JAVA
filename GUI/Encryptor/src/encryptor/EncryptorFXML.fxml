@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="268.0" prefWidth="848.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="encryptor.EncryptorController">
+<AnchorPane id="AnchorPane" prefHeight="268.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="encryptor.EncryptorController">
     <children>
         <Button fx:id="newbutton" layoutX="21.0" layoutY="130.0" onAction="#newMethod" prefHeight="43.0" prefWidth="104.0" text="New" />
         <Label fx:id="label101" alignment="CENTER_RIGHT" layoutX="23.0" layoutY="15.0" minHeight="16" minWidth="69" prefHeight="43.0" prefWidth="104.0" text="Input:" />
       <Label fx:id="label102" alignment="CENTER_RIGHT" layoutX="14.0" layoutY="57.0" minHeight="16" minWidth="69" prefHeight="43.0" prefWidth="104.0" text="Output:" />
-      <TextField fx:id="text01" layoutX="153.0" layoutY="18.0" prefHeight="36.0" prefWidth="626.0" />
-      <TextField fx:id="text02" layoutX="153.0" layoutY="61.0" prefHeight="28.0" prefWidth="626.0" />
+      <TextField fx:id="text01" layoutX="153.0" layoutY="18.0" prefHeight="36.0" prefWidth="626.0">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="text02" layoutX="153.0" layoutY="61.0" prefHeight="28.0" prefWidth="626.0">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font></TextField>
       <Button fx:id="loadbutton" layoutX="134.0" layoutY="130.0" onAction="#loadMethod" prefHeight="43.0" prefWidth="104.0" text="Load" />
       <Button fx:id="savebutton" layoutX="251.0" layoutY="130.0" onAction="#saveMethod" prefHeight="43.0" prefWidth="104.0" text="Save" />
       <Button fx:id="encodebutton" layoutX="371.0" layoutY="130.0" onAction="#encodeMethod" prefHeight="43.0" prefWidth="104.0" text="Encode" />
