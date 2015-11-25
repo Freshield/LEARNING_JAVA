@@ -18,6 +18,8 @@ import java.io.FileWriter;
 import java.io.FileReader;
 import java.io.BufferedReader;
 import java.io.IOException;
+import javafx.scene.input.Clipboard;
+import javafx.scene.input.ClipboardContent;
 
 /**
  *
@@ -160,13 +162,21 @@ public class EncryptorController implements Initializable {
     }
     @FXML
     private void clearMethod(ActionEvent event) {
-        
-        label103.setText("This is clear button");
+        text01.setText("");
+        text02.setText("");
+        e = null;
+        inputText = "";
+        resultText = "";
+        label103.setText("CLEARED");
     }
     @FXML
     private void copyMethod(ActionEvent event) {
+        Clipboard clipboard = Clipboard.getSystemClipboard();
+        ClipboardContent content = new ClipboardContent();
+        content.putString(resultText);
+        clipboard.setContent(content);
+        label103.setText("COPIED");
         
-        label103.setText("This is copy button");
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
