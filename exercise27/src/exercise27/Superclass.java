@@ -1,10 +1,10 @@
 package exercise27;
 
-public class Superclass {
+class Super {
 	
 	public int superfield;
 	
-	public Superclass()
+	public Super()
 	{
 		System.out.println("Superclass");
 	}
@@ -15,7 +15,7 @@ public class Superclass {
 	}
 }
 	
-class Subclass extends Superclass
+class Subclass extends Super
 	{
 		public int subfield;
 		
@@ -31,7 +31,8 @@ class Subclass extends Superclass
 	}
 	
 	
-
+public class Superclass
+{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -41,5 +42,6 @@ class Subclass extends Superclass
 		
 
 	}
+}
 
 
