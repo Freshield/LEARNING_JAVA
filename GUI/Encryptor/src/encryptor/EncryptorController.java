@@ -103,6 +103,7 @@ public class EncryptorController implements Initializable {
                 FileWriter fw = new FileWriter(f);
                 fw.write(String.valueOf(e.getCode()));
                 fw.close();
+                
             }
         }
         catch(IOException ex)

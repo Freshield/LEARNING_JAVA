@@ -36,9 +36,6 @@ public class Encrypt {
 		}while(a % 2 == 0);
 		
 		
-		System.out.println(a);
-		System.out.println(b);
-		
 		int x,y,m,i;
 		
 		char c = 'a';
